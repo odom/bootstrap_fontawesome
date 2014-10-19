@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav class="navbar navbar-default" id="menu" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bar"></span>
+                <span class="fa fa-bar"></span>
+                <span class="fa fa-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="#/"><i class="fa fa-home"></i></a></li>
+                <li class=""><a href="#"><i class="fa fa-plus-circle"></i> New </a></li>
+                <li class=""><a href="#"> Delete </a></li>
+                <li class=""><a href="#"> Archive </a></li>
+                <li class=""><a href="#"> Move To </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="left">
+    <form role="search">
+        <input type="text" class="form-control" placeholder="Search">
+        <a id="btn-search" type="submit"><i class="fa fa-search"></i></a>
+    </form>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Folder
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a class="list-group-item active" href="#">Inbox  <span class="badge-right">100</span></a>
+                        <a class="list-group-item" href="#">Junk  <span class="badge-right">10</span></a>
+                        <a class="list-group-item" href="#">Drafts  <span class="badge-right">16</span></a>
+                        <a class="list-group-item" href="#">Sent <span class="badge-right">12</span></a>
+                        <a class="list-group-item" href="#">Deleted <span class="badge-right">1</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="right">
+    <div class="row">
+        <div class="col-sm-6">
+            <table class="table table-condensed table-hover">
+                <thead>
+                <tr>
+                    <th class="span1"><input type="checkbox"></th>
+                    <th class="span2"></th>
+                    <th class="span9"></th>
+                    <th class="span2"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> <a href="#"><i class="icon-star-empty"></i></a></td>
+                    <td><strong>Message body goes here</strong></td>
+                    <td><strong></strong></td>
+                    <td><strong>11:23 PM</strong></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> <a href="#"><i class="icon-star-empty"></i></a></td>
+                    <td>Message body goes here</td>
+                    <td></td>
+                    <td>Sept4</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> <a href="#"><i class="icon-star"></i></a></td>
+                    <td><strong>Message body goes here</strong></td>
+                    <td><strong></strong></td>
+                    <td><strong>Sept3</strong></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> <a href="#"><i class="icon-star"></i></a></td>
+                    <td><strong>Message body goes here</strong></td>
+                    <td><strong></strong></td>
+                    <td><strong>Sept3</strong></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-6">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid task-detail">
+                            <div class="box-header">
+                                <div class="box-title">
+                                    <h3>
+                                        <img style="vertical-align: middle;" class="img-circle task-owner-avatar" src="http://tasktracking.openbst.net/upload/avatar/thumbs/1411788702_54262f9e83a2e.png" alt="client" height="64"> client <small data-toggle="tooltip" title="" data-original-title="Thursday, September 25, 2014 at 1:25pm">3 weeks ago</small>
+                                    </h3>
+                                </div>
+                                <div class="box-tools pull-right">
+                                    <a data-toggle="tooltip" title="" class="btn btn-focus-comment btn-default btn-sm" data-original-title="Comment"><i class="fa fa-comment-o"></i></a>
+                                    <a data-toggle="tooltip" title="" href="http://tasktracking.openbst.net/task/edit/14141" class="btn btn-default btn-sm" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                                </div>
+                                <div class="box-tools pull-right">
+                                    <div data-toggle="tooltip" title="" class="btn-group btn-group-xs" data-original-title="Status is New">
+                                        <button id="btn-status-1" data-task-id="14141" data-status-id="1" type="button" class="btn btn-flat btn-success btn-change-status">
+                                            <i class="fa fa-fw fa-check-square-o"></i> New								</button>
+                                        <button id="btn-status-2" data-task-id="14141" data-status-id="2" type="button" class="btn btn-flat btn-default btn-change-status">
+                                            Processing								</button>
+                                        <button id="btn-status-3" data-task-id="14141" data-status-id="3" type="button" class="btn btn-flat btn-default btn-change-status">
+                                            Done								</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-body task-description">
+                                <p>Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;Task 2 edited add files more files &nbsp;...&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid">
+                            <div class="box-header">
+                                <i class="fa fa-comment-o"></i>
+                                <h3 class="box-title comment-counts">3 comments</h3>
+                            </div>
+                            <div class="box-body comments-container">
+                                <blockquote id="comment-16149" class="comment"><div class="btn-comment-actions btn-group btn-group-xs pull-right"><button type="button" class="btn btn-comment-remove btn-default"><i class="fa fa-fw fa-trash-o"></i> remove</button></div><div class="image"><img data-toggle="tooltip" title="" style="vertical-align: middle; margin-right: 15px;" class="img-circle pull-left" src="http://tasktracking.openbst.net/upload/avatar/thumbs/1412291035_542dd9dbc80a6.jpg" alt="staff" width="40" data-original-title="staff"></div><div class="comment-text-container"><div data-comment-id="16149" data-task-id="14141" class="comment-text"><p>hello</p>
+                                </div></div><small>said <b>staff</b> <span data-toggle="tooltip" title="" data-original-title="Saturday, September 27, 2014 at 10:35am">3 weeks ago</span><span data-toggle="tooltip" title="" data-original-title="client">, visible to 1 user</span></small></blockquote>									<blockquote id="comment-16150" class="comment"><div class="btn-comment-actions btn-group btn-group-xs pull-right"><button type="button" class="btn btn-comment-remove btn-default"><i class="fa fa-fw fa-trash-o"></i> remove</button></div><div class="image"><img data-toggle="tooltip" title="" style="vertical-align: middle; margin-right: 15px;" class="img-circle pull-left" src="http://tasktracking.openbst.net/upload/avatar/thumbs/1411788702_54262f9e83a2e.png" alt="client" width="40" data-original-title="client"></div><div class="comment-text-container"><div data-comment-id="16150" data-task-id="14141" class="comment-text"><p>u crazy ?</p>
+                            </div></div><small>said <b>client</b> <span data-toggle="tooltip" title="" data-original-title="Saturday, September 27, 2014 at 10:35am">3 weeks ago</span>, <span data-toggle="tooltip" title="" data-original-title="Everyone can see this.">visibility public</span></small></blockquote>									<blockquote id="comment-16151" class="comment"><div class="btn-comment-actions btn-group btn-group-xs pull-right"><button type="button" class="btn btn-comment-edit btn-default"><i class="fa fa-fw fa-edit"></i> edit</button><button type="button" class="btn btn-comment-remove btn-default"><i class="fa fa-fw fa-trash-o"></i> remove</button></div><div class="image"><img data-toggle="tooltip" title="" style="vertical-align: middle; margin-right: 15px;" class="img-circle pull-left" src="http://tasktracking.openbst.net/upload/avatar/thumbs/1411794721_542647210d574.jpg" alt="admin" width="40" data-original-title="admin"></div><div class="comment-text-container"><div data-comment-id="16151" data-task-id="14141" class="comment-text"><p>Good ...</p>
+                            </div></div><small>said <b>admin</b> <span data-toggle="tooltip" title="" data-original-title="Saturday, September 27, 2014 at 10:36am">3 weeks ago</span><span data-toggle="tooltip" title="" data-original-title="staff">, visible to 1 user</span></small></blockquote>							</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box">
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <textarea class="panel-google-plus-textarea" id="comment-textarea" name="comment" style="height: 20px; display: none;" rows="4"></textarea><div contenteditable="true" class="cke_textarea_inline cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" tabindex="0" spellcheck="false" role="textbox" aria-label="Rich Text Editor, comment-textarea" title="Rich Text Editor, comment-textarea" aria-describedby="cke_78" style="position: relative;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
